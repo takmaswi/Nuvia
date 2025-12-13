@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Nuvia Properties & Developments for diaspora development, student housing, property management, or construction services in Zimbabwe.">
+    <title>Contact Us | Nuvia Properties & Developments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <div class="logo-text"><span>NUVIA</span><span>Properties & Developments</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Get Started</a></div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+
+    <section class="hero hero-short"
+        style="background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);">
+        <div class="hero-content">
+            <h1>Ready to Get Started?</h1>
+            <p>Tell us about your needs. We'll respond personally within 24 hours.</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Contact Forms -->
+        <section class="section section-white">
+            <div class="container" style="max-width: 900px;">
+                <div class="tabs">
+                    <div class="tab-list">
+                        <button class="tab-button active">Diaspora Development</button>
+                        <button class="tab-button">Student Housing</button>
+                        <button class="tab-button">Property Management</button>
+                        <button class="tab-button">General Inquiry</button>
+                    </div>
+
+                    <!-- Diaspora Development Form -->
+                    <div class="tab-panel active">
+                        <div class="card card-glass">
+                            <h3>Discuss Your Diaspora Project</h3>
+                            <p class="mb-4">Building from abroad? Let's talk about your vision.</p>
+                            <form id="diaspora-form">
+                                <div class="form-group">
+                                    <label class="form-label required">Your Name</label>
+                                    <input type="text" class="form-input" placeholder="Full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label required">Email Address</label>
+                                    <input type="email" class="form-input" placeholder="your@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label required">Phone / WhatsApp</label>
+                                    <input type="tel" class="form-input" placeholder="+44 XXX XXX XXXX" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Property Location (Zimbabwe)</label>
+                                    <input type="text" class="form-input" placeholder="e.g., Harare, Bulawayo">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label required">Project Description & Timeline</label>
+                                    <textarea class="form-textarea"
+                                        placeholder="Tell us about your dream project and when you'd like to start..."
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Discuss My
+                                    Project</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Student Housing Form -->
+                    <div class="tab-panel">
+                        <div class="card card-glass">
+                            <h3>Student Accommodation Inquiry</h3>
+                            <p class="mb-4">Looking for quality student housing? We're here to help.</p>
+                            <form id="student-form">
+                                <div class="form-group">
+                                    <label class="form-label required">Your Name</label>
+                                    <input type="text" class="form-input" placeholder="Full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label required">Email Address</label>
+                                    <input type="email" class="form-input" placeholder="your@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label required">Phone / WhatsApp</label>
+                                    <input type="tel" class="form-input" placeholder="Your contact number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">I am a:</label>
+                                    <select class="form-select">
+                                        <option>Student</option>
+                                        <option>Parent/Guardian</option>
+                                        <option>Education Agent</option>
+                                        <option>University Representative</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Location Preference & Timeline</label>
+                                    <textarea class="form-textarea"
+                                        placeholder="Which university? When do you need accommodation?"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Check
+                                    Availability</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Property Management Form -->
+                    <div class="tab-panel">
+                        <div class="card card-glass">
+                            <h3>Property Management Inquiry</h3>
+                            <p class="mb-4">Own a property? Let us manage it professionally.</p>
+                            <form id="management-form">
+                                <div class="form-group">
+                                    <label class="form-label required">Your Name</label>
+                                    <input type="text" class="form-input" placeholder="Full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label required">Email Address</label>
+                                    <input type="email" class="form-input" placeholder="your@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label required">Phone / WhatsApp</label>
+                                    <input type="tel" class="form-input" placeholder="Your contact number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Property Location</label>
+                                    <input type="text" class="form-input" placeholder="e.g., Borrowdale, Harare">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Property Type</label>
+                                    <select class="form-select">
+                                        <option>Residential</option>
+                                        <option>Commercial</option>
+                                        <option>Mixed-Use</option>
+                                        <option>Industrial</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Get Free
+                                    Assessment</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- General Inquiry Form -->
+                    <div class="tab-panel">
+                        <div class="card card-glass">
+                            <h3>General Inquiry</h3>
+                            <p class="mb-4">Have a question? We'd love to hear from you.</p>
+                            <form id="general-form">
+                                <div class="form-group">
+                                    <label class="form-label required">Your Name</label>
+                                    <input type="text" class="form-input" placeholder="Full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label required">Email Address</label>
+                                    <input type="email" class="form-input" placeholder="your@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Subject</label>
+                                    <input type="text" class="form-input" placeholder="What's this about?">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label required">Message</label>
+                                    <textarea class="form-textarea" placeholder="Your message..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send
+                                    Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact -->
+        <section class="section section-cream">
+            <div class="container">
+                <div class="grid grid-2" style="gap: 4rem; align-items: start;">
+                    <div class="fade-in">
+                        <h2>Contact Us Directly</h2>
+                        <div class="card mt-4">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div class="trust-icon" style="width: 48px; height: 48px;"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg></div>
+                                <div>
+                                    <h4 style="margin: 0;">Email</h4>
+                                    <a href="mailto:hello@nuviaproperties.co.zw"
+                                        style="color: var(--gold);">hello@nuviaproperties.co.zw</a>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div class="trust-icon" style="width: 48px; height: 48px;"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg></div>
+                                <div>
+                                    <h4 style="margin: 0;">WhatsApp</h4>
+                                    <p style="margin: 0; color: var(--charcoal);">+263 XXX XXX XXX</p>
+                                    <small style="color: var(--charcoal);">Quick inquiries, instant response</small>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div class="trust-icon" style="width: 48px; height: 48px;"><svg viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg></div>
+                                <div>
+                                    <h4 style="margin: 0;">Location</h4>
+                                    <p style="margin: 0; color: var(--charcoal);">Harare, Zimbabwe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-in-right">
+                        <h2>Our Commitment</h2>
+                        <div class="card card-glass mt-4">
+                            <ul style="list-style: none; line-height: 2.2;">
+                                <li>✓ We respond to all inquiries within 24 hours</li>
+                                <li>✓ Initial consultation is free and confidential</li>
+                                <li>✓ We listen to your needs before proposing solutions</li>
+                                <li>✓ No high-pressure sales tactics</li>
+                                <li>✓ No hidden fees or surprises</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section section-white">
+            <div class="container" style="max-width: 800px;">
+                <h2 class="text-center mb-6">Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">What does Nuvia do?<span
+                                class="accordion-icon"></span></button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">Nuvia Properties & Developments provides professional property
+                                solutions including diaspora property development, student accommodation, property
+                                management, and construction services in Zimbabwe.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Why should I choose Nuvia?<span
+                                class="accordion-icon"></span></button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">We combine transparency, accountability, and professional
+                                execution. As a female-led company with diaspora understanding, we treat every project
+                                like family—with weekly updates, documented communication, and on-time delivery.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Do you work with international clients?<span
+                                class="accordion-icon"></span></button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">Absolutely! Our diaspora development service is specifically
+                                designed for Zimbabweans living abroad who want to build or invest in properties back
+                                home. We handle everything from land acquisition to handover.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">How do you handle communication across time zones?<span
+                                class="accordion-icon"></span></button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">We're flexible with communication timing and use WhatsApp,
+                                email, and scheduled calls to accommodate different time zones. Weekly photo updates and
+                                monthly video reports keep you informed regardless of location.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">What's the typical project cost?<span
+                                class="accordion-icon"></span></button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">Costs vary based on project scope, location, and specifications.
+                                We provide detailed, transparent quotations after understanding your requirements. No
+                                hidden fees—ever.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-text"><span>NUVIA</span><span>Properties & Developments</span></div>
+                    </a>
+                    <p>Professional property solutions built on transparency, integrity, and results.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <div class="footer-links">
+                        <a href="services.html#diaspora">Diaspora Development</a>
+                        <a href="student-housing.html">Student Housing</a>
+                        <a href="services.html#management">Property Management</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">Our Story</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-contact">
+                        <p><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg> +263 XXX XXX XXX</p>
+                        <p><svg viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg> hello@nuviaproperties.co.zw</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Nuvia Properties & Developments (Pvt) Ltd.</p>
+                <div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+
+</html>

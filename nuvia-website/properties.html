@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse available properties for rent and sale from Nuvia Properties & Developments in Zimbabwe.">
+    <title>Properties | Nuvia Properties & Developments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <div class="logo-text"><span>NUVIA</span><span>Properties & Developments</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Get Started</a></div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+
+    <section class="hero hero-short"
+        style="background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);">
+        <div class="hero-content">
+            <h1>Available Properties</h1>
+            <p>Quality properties managed with professionalism and care</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Properties Grid -->
+        <section class="section section-white">
+            <div class="container">
+                <!-- Filter Bar -->
+                <div class="card card-glass mb-6"
+                    style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; padding: 1.5rem;">
+                    <div class="form-group" style="margin: 0; flex: 1; min-width: 150px;">
+                        <select class="form-select">
+                            <option>All Types</option>
+                            <option>Residential</option>
+                            <option>Commercial</option>
+                            <option>Student Housing</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin: 0; flex: 1; min-width: 150px;">
+                        <select class="form-select">
+                            <option>All Locations</option>
+                            <option>Harare</option>
+                            <option>Bulawayo</option>
+                            <option>Gweru</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin: 0; flex: 1; min-width: 150px;">
+                        <select class="form-select">
+                            <option>Any Price</option>
+                            <option>Under $500/mo</option>
+                            <option>$500 - $1000/mo</option>
+                            <option>$1000+/mo</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary">Search</button>
+                </div>
+
+                <!-- Property Listings -->
+                <div class="property-grid fade-in">
+                    <!-- Coming Soon Properties -->
+                    <div class="property-card">
+                        <div class="property-image"
+                            style="background: linear-gradient(135deg, var(--gold-light), var(--cream)); display: flex; align-items: center; justify-content: center;">
+                            <span style="color: var(--gold); font-size: 4rem;">🏢</span>
+                        </div>
+                        <div class="property-content">
+                            <span class="property-badge"
+                                style="position: static; margin-bottom: 0.5rem; display: inline-block;">Coming
+                                Soon</span>
+                            <div class="property-price">Contact for Price</div>
+                            <p class="property-location"><svg viewBox="0 0 24 24">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg> Harare, Zimbabwe</p>
+                            <div class="property-specs">
+                                <span class="property-spec"><svg viewBox="0 0 24 24">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                    </svg> Residential</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-image"
+                            style="background: linear-gradient(135deg, var(--gold-light), var(--cream)); display: flex; align-items: center; justify-content: center;">
+                            <span style="color: var(--gold); font-size: 4rem;">🎓</span>
+                        </div>
+                        <div class="property-content">
+                            <span class="property-badge"
+                                style="position: static; margin-bottom: 0.5rem; display: inline-block;">Coming
+                                Soon</span>
+                            <div class="property-price">Student Rates</div>
+                            <p class="property-location"><svg viewBox="0 0 24 24">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg> Near NUST, Bulawayo</p>
+                            <div class="property-specs">
+                                <span class="property-spec"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                                    </svg> Student Housing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-image"
+                            style="background: linear-gradient(135deg, var(--gold-light), var(--cream)); display: flex; align-items: center; justify-content: center;">
+                            <span style="color: var(--gold); font-size: 4rem;">🏬</span>
+                        </div>
+                        <div class="property-content">
+                            <span class="property-badge"
+                                style="position: static; margin-bottom: 0.5rem; display: inline-block;">Coming
+                                Soon</span>
+                            <div class="property-price">Contact for Price</div>
+                            <p class="property-location"><svg viewBox="0 0 24 24">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg> Harare CBD</p>
+                            <div class="property-specs">
+                                <span class="property-spec"><svg viewBox="0 0 24 24">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                                    </svg> Commercial</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-glass text-center mt-6 py-8">
+                    <h3>Growing Our Portfolio</h3>
+                    <p>As a newly registered company (November 2025), our property portfolio is growing. Contact us
+                        about upcoming listings or to discuss your property management needs.</p>
+                    <a href="contact.html" class="btn btn-primary mt-3">Get Notified About New Listings</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Property Management Promo -->
+        <section class="section section-cream">
+            <div class="container">
+                <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+                    <div class="fade-in">
+                        <h2>Own a Property?</h2>
+                        <p>Let us manage it for you with professionalism, transparency, and reliable tenants.</p>
+                        <ul class="card-list">
+                            <li>Tenant vetting & placement</li>
+                            <li>Rent collection & reporting</li>
+                            <li>Maintenance coordination</li>
+                            <li>Regular property inspections</li>
+                        </ul>
+                        <a href="services.html#management" class="btn btn-primary mt-3">Learn About Property
+                            Management</a>
+                    </div>
+                    <div class="trust-grid slide-in-right">
+                        <div class="trust-item">
+                            <div class="trust-icon"><svg viewBox="0 0 24 24">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg></div>
+                            <h4>Protected</h4>
+                            <p>Your investment is safe</p>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-icon"><svg viewBox="0 0 24 24">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg></div>
+                            <h4>Transparent</h4>
+                            <p>Monthly reports</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-text"><span>NUVIA</span><span>Properties & Developments</span></div>
+                    </a>
+                    <p>Professional property solutions built on transparency, integrity, and results.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <div class="footer-links">
+                        <a href="services.html#diaspora">Diaspora Development</a>
+                        <a href="student-housing.html">Student Housing</a>
+                        <a href="services.html#management">Property Management</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">Our Story</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-contact">
+                        <p><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg> +263 XXX XXX XXX</p>
+                        <p><svg viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg> hello@nuviaproperties.co.zw</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Nuvia Properties & Developments (Pvt) Ltd.</p>
+                <div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
