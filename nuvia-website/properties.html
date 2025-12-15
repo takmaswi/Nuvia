@@ -76,73 +76,97 @@
                     <button class="btn btn-primary">Search</button>
                 </div>
 
+                <!-- Featured Property -->
+                <div class="card card-glass mb-6">
+                    <div class="grid grid-2" style="gap: 0;">
+                        <div
+                            style="height: 400px; position: relative; overflow: hidden; border-radius: var(--radius-lg) 0 0 var(--radius-lg);">
+                            <img src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?w=1000&q=80"
+                                style="width: 100%; height: 100%; object-fit: cover;" alt="Featured Luxury Home">
+                            <span class="property-badge" style="top: 20px; left: 20px;">Featured Listing</span>
+                        </div>
+                        <div
+                            style="padding: var(--space-4); display: flex; flex-direction: column; justify-content: center;">
+                            <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">The Highland Estate</h2>
+                            <p class="text-gold mb-2" style="font-weight: 600;">$450,000 USD</p>
+                            <p class="mb-3">An architectural masterpiece in the heart of Borrowdale Brooke. Featuring 5
+                                bedrooms, a home cinema, and panoramic valley views.</p>
+
+                            <div class="property-specs mb-4" style="justify-content: flex-start;">
+                                <span class="property-spec">5 Beds</span>
+                                <span class="property-spec">4.5 Baths</span>
+                                <span class="property-spec">500m²</span>
+                            </div>
+
+                            <div class="flex" style="gap: 1rem;">
+                                <button class="btn btn-primary">Schedule Viewing</button>
+                                <button class="btn btn-secondary">Download Brochure</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Property Listings -->
                 <div class="property-grid fade-in">
-                    <!-- Coming Soon Properties -->
+                    <!-- Property 1 -->
                     <div class="property-card">
-                        <div class="property-image"
-                            style="background: linear-gradient(135deg, var(--gold-light), var(--cream)); display: flex; align-items: center; justify-content: center;">
-                            <span style="color: var(--gold); font-size: 4rem;">🏢</span>
+                        <div class="property-image">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80"
+                                alt="Modern Family Home">
+                            <span class="property-badge">For Sale</span>
                         </div>
                         <div class="property-content">
-                            <span class="property-badge"
-                                style="position: static; margin-bottom: 0.5rem; display: inline-block;">Coming
-                                Soon</span>
-                            <div class="property-price">Contact for Price</div>
+                            <div class="property-price">$220,000</div>
                             <p class="property-location"><svg viewBox="0 0 24 24">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                                     <circle cx="12" cy="10" r="3" />
-                                </svg> Harare, Zimbabwe</p>
+                                </svg> Mount Pleasant, Harare</p>
                             <div class="property-specs">
-                                <span class="property-spec"><svg viewBox="0 0 24 24">
-                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                                    </svg> Residential</span>
+                                <span class="property-spec">4 Beds</span>
+                                <span class="property-spec">3 Baths</span>
+                                <span class="property-spec">280m²</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Property 2 -->
                     <div class="property-card">
-                        <div class="property-image"
-                            style="background: linear-gradient(135deg, var(--gold-light), var(--cream)); display: flex; align-items: center; justify-content: center;">
-                            <span style="color: var(--gold); font-size: 4rem;">🎓</span>
+                        <div class="property-image">
+                            <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80"
+                                alt="Student Apartment">
+                            <span class="property-badge" style="background: var(--navy);">For Rent</span>
                         </div>
                         <div class="property-content">
-                            <span class="property-badge"
-                                style="position: static; margin-bottom: 0.5rem; display: inline-block;">Coming
-                                Soon</span>
-                            <div class="property-price">Student Rates</div>
+                            <div class="property-price">$450/month</div>
                             <p class="property-location"><svg viewBox="0 0 24 24">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                                     <circle cx="12" cy="10" r="3" />
                                 </svg> Near NUST, Bulawayo</p>
                             <div class="property-specs">
-                                <span class="property-spec"><svg viewBox="0 0 24 24">
-                                        <path
-                                            d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
-                                    </svg> Student Housing</span>
+                                <span class="property-spec">Studio</span>
+                                <span class="property-spec">Furnished</span>
+                                <span class="property-spec">WiFi</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Property 3 -->
                     <div class="property-card">
-                        <div class="property-image"
-                            style="background: linear-gradient(135deg, var(--gold-light), var(--cream)); display: flex; align-items: center; justify-content: center;">
-                            <span style="color: var(--gold); font-size: 4rem;">🏬</span>
+                        <div class="property-image">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80"
+                                alt="Office Space">
+                            <span class="property-badge">Lease</span>
                         </div>
                         <div class="property-content">
-                            <span class="property-badge"
-                                style="position: static; margin-bottom: 0.5rem; display: inline-block;">Coming
-                                Soon</span>
-                            <div class="property-price">Contact for Price</div>
+                            <div class="property-price">$15/sqm</div>
                             <p class="property-location"><svg viewBox="0 0 24 24">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                                     <circle cx="12" cy="10" r="3" />
-                                </svg> Harare CBD</p>
+                                </svg> Newlands, Harare</p>
                             <div class="property-specs">
-                                <span class="property-spec"><svg viewBox="0 0 24 24">
-                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-                                    </svg> Commercial</span>
+                                <span class="property-spec">Office</span>
+                                <span class="property-spec">Parking</span>
+                                <span class="property-spec">Security</span>
                             </div>
                         </div>
                     </div>
