@@ -18,6 +18,8 @@
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/styles.css?v=2">
   <link rel="stylesheet" href="assets/css/responsive.css?v=2">
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -274,6 +276,85 @@
       </div>
     </section>
 
+    <!-- Project Showcase 3D Carousel -->
+    <section class="project-carousel-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>See Our Work</h2>
+          <p>Explore our premium property developments showcased in stunning 3D</p>
+        </div>
+
+        <div class="swiper project-carousel">
+          <div class="swiper-wrapper">
+            <!-- Slide 1: Highlands Manor -->
+            <div class="swiper-slide">
+              <div class="carousel-slide-image">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80"
+                  alt="The Highlands Manor">
+                <span class="carousel-slide-badge">Luxury Living</span>
+              </div>
+              <div class="carousel-slide-content">
+                <h3>The Highlands Manor</h3>
+                <p>An exclusive residential development featuring bespoke luxury homes with panoramic views of Harare's
+                  scenic highlands.</p>
+                <div class="carousel-slide-features">
+                  <span>5 Bedrooms</span>
+                  <span>Premium Finishes</span>
+                  <span>Gated Community</span>
+                </div>
+                <a href="properties.html" class="carousel-slide-cta">View Details</a>
+              </div>
+            </div>
+
+            <!-- Slide 2: Nuvia Student Village -->
+            <div class="swiper-slide">
+              <div class="carousel-slide-image">
+                <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80"
+                  alt="Nuvia Student Village">
+                <span class="carousel-slide-badge">Student Living</span>
+              </div>
+              <div class="carousel-slide-content">
+                <h3>Nuvia Student Village</h3>
+                <p>Modern, safe, and dignified student accommodation designed for academic success near major
+                  universities.</p>
+                <div class="carousel-slide-features">
+                  <span>200+ Beds</span>
+                  <span>24/7 Security</span>
+                  <span>High-Speed WiFi</span>
+                </div>
+                <a href="student-housing.html" class="carousel-slide-cta">Explore Options</a>
+              </div>
+            </div>
+
+            <!-- Slide 3: CBD Office Revamp -->
+            <div class="swiper-slide">
+              <div class="carousel-slide-image">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
+                  alt="CBD Office Revamp">
+                <span class="carousel-slide-badge">Commercial</span>
+              </div>
+              <div class="carousel-slide-content">
+                <h3>CBD Office Revamp</h3>
+                <p>A transformative commercial renovation project bringing modern co-working spaces to Harare's central
+                  business district.</p>
+                <div class="carousel-slide-features">
+                  <span>2,500 sqm</span>
+                  <span>Premium Location</span>
+                  <span>Smart Building</span>
+                </div>
+                <a href="contact.html" class="carousel-slide-cta">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation & Pagination -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="section bg-mesh-dark">
       <div class="container text-center">
@@ -354,6 +435,37 @@
   </footer>
 
   <script src="assets/js/main.js?v=2"></script>
+  <!-- Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize 3D Coverflow Carousel
+    const projectCarousel = new Swiper('.project-carousel', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 
 </html>

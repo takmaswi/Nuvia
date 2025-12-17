@@ -14,6 +14,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -104,81 +106,157 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Property Listings -->
-                <div class="property-grid fade-in">
-                    <!-- Property 1 -->
-                    <div class="property-card">
-                        <div class="property-image">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80"
-                                alt="Modern Family Home">
-                            <span class="property-badge">For Sale</span>
+                    <!-- 3D Project Showcase Carousel -->
+                    <div class="project-carousel-section" style="background: transparent; margin: var(--space-6) 0;">
+                        <div class="section-header">
+                            <h2>Our Featured Projects</h2>
+                            <p>Explore our premium developments showcased in stunning 3D</p>
                         </div>
-                        <div class="property-content">
-                            <div class="property-price">$220,000</div>
-                            <p class="property-location"><svg viewBox="0 0 24 24">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                    <circle cx="12" cy="10" r="3" />
-                                </svg> Mount Pleasant, Harare</p>
-                            <div class="property-specs">
-                                <span class="property-spec">4 Beds</span>
-                                <span class="property-spec">3 Baths</span>
-                                <span class="property-spec">280m²</span>
+
+                        <div class="swiper project-carousel">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 1: Highlands Manor -->
+                                <div class="swiper-slide">
+                                    <div class="carousel-slide-image">
+                                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80"
+                                            alt="The Highlands Manor">
+                                        <span class="carousel-slide-badge">Luxury Living</span>
+                                    </div>
+                                    <div class="carousel-slide-content">
+                                        <h3>The Highlands Manor</h3>
+                                        <p>An exclusive residential development featuring bespoke luxury homes with
+                                            panoramic views of Harare's scenic highlands.</p>
+                                        <div class="carousel-slide-features">
+                                            <span>5 Bedrooms</span>
+                                            <span>Premium Finishes</span>
+                                            <span>Gated Community</span>
+                                        </div>
+                                        <a href="contact.html" class="carousel-slide-cta">Schedule Viewing</a>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2: Nuvia Student Village -->
+                                <div class="swiper-slide">
+                                    <div class="carousel-slide-image">
+                                        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80"
+                                            alt="Nuvia Student Village">
+                                        <span class="carousel-slide-badge">Student Living</span>
+                                    </div>
+                                    <div class="carousel-slide-content">
+                                        <h3>Nuvia Student Village</h3>
+                                        <p>Modern, safe, and dignified student accommodation designed for academic
+                                            success near major universities.</p>
+                                        <div class="carousel-slide-features">
+                                            <span>200+ Beds</span>
+                                            <span>24/7 Security</span>
+                                            <span>High-Speed WiFi</span>
+                                        </div>
+                                        <a href="student-housing.html" class="carousel-slide-cta">Explore Options</a>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 3: CBD Office Revamp -->
+                                <div class="swiper-slide">
+                                    <div class="carousel-slide-image">
+                                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
+                                            alt="CBD Office Revamp">
+                                        <span class="carousel-slide-badge">Commercial</span>
+                                    </div>
+                                    <div class="carousel-slide-content">
+                                        <h3>CBD Office Revamp</h3>
+                                        <p>A transformative commercial renovation project bringing modern co-working
+                                            spaces to Harare's central business district.</p>
+                                        <div class="carousel-slide-features">
+                                            <span>2,500 sqm</span>
+                                            <span>Premium Location</span>
+                                            <span>Smart Building</span>
+                                        </div>
+                                        <a href="contact.html" class="carousel-slide-cta">Lease Inquiries</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Navigation & Pagination -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <!-- Property Listings -->
+                    <div class="property-grid fade-in">
+                        <!-- Property 1 -->
+                        <div class="property-card">
+                            <div class="property-image">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80"
+                                    alt="Modern Family Home">
+                                <span class="property-badge">For Sale</span>
+                            </div>
+                            <div class="property-content">
+                                <div class="property-price">$220,000</div>
+                                <p class="property-location"><svg viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg> Mount Pleasant, Harare</p>
+                                <div class="property-specs">
+                                    <span class="property-spec">4 Beds</span>
+                                    <span class="property-spec">3 Baths</span>
+                                    <span class="property-spec">280m²</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Property 2 -->
+                        <div class="property-card">
+                            <div class="property-image">
+                                <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80"
+                                    alt="Student Apartment">
+                                <span class="property-badge" style="background: var(--navy);">For Rent</span>
+                            </div>
+                            <div class="property-content">
+                                <div class="property-price">$450/month</div>
+                                <p class="property-location"><svg viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg> Near NUST, Bulawayo</p>
+                                <div class="property-specs">
+                                    <span class="property-spec">Studio</span>
+                                    <span class="property-spec">Furnished</span>
+                                    <span class="property-spec">WiFi</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Property 3 -->
+                        <div class="property-card">
+                            <div class="property-image">
+                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80"
+                                    alt="Office Space">
+                                <span class="property-badge">Lease</span>
+                            </div>
+                            <div class="property-content">
+                                <div class="property-price">$15/sqm</div>
+                                <p class="property-location"><svg viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg> Newlands, Harare</p>
+                                <div class="property-specs">
+                                    <span class="property-spec">Office</span>
+                                    <span class="property-spec">Parking</span>
+                                    <span class="property-spec">Security</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Property 2 -->
-                    <div class="property-card">
-                        <div class="property-image">
-                            <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80"
-                                alt="Student Apartment">
-                            <span class="property-badge" style="background: var(--navy);">For Rent</span>
-                        </div>
-                        <div class="property-content">
-                            <div class="property-price">$450/month</div>
-                            <p class="property-location"><svg viewBox="0 0 24 24">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                    <circle cx="12" cy="10" r="3" />
-                                </svg> Near NUST, Bulawayo</p>
-                            <div class="property-specs">
-                                <span class="property-spec">Studio</span>
-                                <span class="property-spec">Furnished</span>
-                                <span class="property-spec">WiFi</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Property 3 -->
-                    <div class="property-card">
-                        <div class="property-image">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80"
-                                alt="Office Space">
-                            <span class="property-badge">Lease</span>
-                        </div>
-                        <div class="property-content">
-                            <div class="property-price">$15/sqm</div>
-                            <p class="property-location"><svg viewBox="0 0 24 24">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                    <circle cx="12" cy="10" r="3" />
-                                </svg> Newlands, Harare</p>
-                            <div class="property-specs">
-                                <span class="property-spec">Office</span>
-                                <span class="property-spec">Parking</span>
-                                <span class="property-spec">Security</span>
-                            </div>
-                        </div>
+                    <div class="card card-glass text-center mt-6 py-8">
+                        <h3>Growing Our Portfolio</h3>
+                        <p>As a newly registered company (November 2025), our property portfolio is growing. Contact us
+                            about upcoming listings or to discuss your property management needs.</p>
+                        <a href="contact.html" class="btn btn-primary mt-3">Get Notified About New Listings</a>
                     </div>
                 </div>
-
-                <div class="card card-glass text-center mt-6 py-8">
-                    <h3>Growing Our Portfolio</h3>
-                    <p>As a newly registered company (November 2025), our property portfolio is growing. Contact us
-                        about upcoming listings or to discuss your property management needs.</p>
-                    <a href="contact.html" class="btn btn-primary mt-3">Get Notified About New Listings</a>
-                </div>
-            </div>
         </section>
 
         <!-- Property Management Promo -->
@@ -265,6 +343,37 @@
         </div>
     </footer>
     <script src="assets/js/main.js"></script>
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize 3D Coverflow Carousel
+        const projectCarousel = new Swiper('.project-carousel', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>

@@ -14,6 +14,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -111,6 +113,85 @@
                         <p>Maintenance, dispute resolution, resident support. Problems get solved, not ignored. We're
                             here when you need us.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current & Upcoming Projects 3D Carousel -->
+        <section class="project-carousel-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Current & Upcoming Projects</h2>
+                    <p>Discover our premium student accommodation developments across Zimbabwe</p>
+                </div>
+
+                <div class="swiper project-carousel">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1: North Wing Residences -->
+                        <div class="swiper-slide">
+                            <div class="carousel-slide-image">
+                                <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80"
+                                    alt="North Wing Residences">
+                                <span class="carousel-slide-badge">Now Leasing</span>
+                            </div>
+                            <div class="carousel-slide-content">
+                                <h3>North Wing Residences</h3>
+                                <p>Premium student living near NUST featuring modern amenities, study lounges, and a
+                                    vibrant community atmosphere.</p>
+                                <div class="carousel-slide-features">
+                                    <span>200 Beds</span>
+                                    <span>Study Rooms</span>
+                                    <span>Gym Access</span>
+                                </div>
+                                <a href="contact.html" class="carousel-slide-cta">Apply Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: South Court -->
+                        <div class="swiper-slide">
+                            <div class="carousel-slide-image">
+                                <img src="https://images.unsplash.com/photo-1522771753035-4850dc638219?w=800&q=80"
+                                    alt="South Court">
+                                <span class="carousel-slide-badge">Coming 2025</span>
+                            </div>
+                            <div class="carousel-slide-content">
+                                <h3>South Court</h3>
+                                <p>Modern study-focused accommodation near University of Zimbabwe with quiet zones and
+                                    collaborative spaces.</p>
+                                <div class="carousel-slide-features">
+                                    <span>150 Beds</span>
+                                    <span>24/7 WiFi</span>
+                                    <span>Quiet Zones</span>
+                                </div>
+                                <a href="contact.html" class="carousel-slide-cta">Pre-Register</a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3: Premium Suites -->
+                        <div class="swiper-slide">
+                            <div class="carousel-slide-image">
+                                <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80"
+                                    alt="Premium Suites">
+                                <span class="carousel-slide-badge">Executive</span>
+                            </div>
+                            <div class="carousel-slide-content">
+                                <h3>Premium Suites</h3>
+                                <p>Executive student apartments for postgraduate students seeking privacy, comfort, and
+                                    dedicated workspaces.</p>
+                                <div class="carousel-slide-features">
+                                    <span>En-Suite</span>
+                                    <span>Kitchenette</span>
+                                    <span>Concierge</span>
+                                </div>
+                                <a href="contact.html" class="carousel-slide-cta">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation & Pagination -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -330,6 +411,37 @@
         </div>
     </footer>
     <script src="assets/js/main.js"></script>
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize 3D Coverflow Carousel
+        const projectCarousel = new Swiper('.project-carousel', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
