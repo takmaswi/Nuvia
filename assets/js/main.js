@@ -104,3 +104,60 @@ function initScrollAnimations() {
 
   elements.forEach(el => observer.observe(el));
 }
+
+// Lazy Loading for Images
+function initLazyLoading() {
+  const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+  if (!lazyImages.length) return;
+
+  lazyImages.forEach(img => {
+    if (img.complete) {
+      img.classList.add('loaded');
+    } else {
+      img.addEventListener('load', () => {
+        img.classList.add('loaded');
+      });
+    }
+  });
+}
+
+// Sticky CTA Bar (appears after scrolling)
+function initStickyCTA() {
+  const stickyCTA = document.querySelector('.sticky-cta');
+  if (!stickyCTA) return;
+
+  let lastScrollY = 0;
+  const showAfter = 500; // Show after scrolling 500px
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.pageYOffset;
+
+    if (currentScrollY > showAfter) {
+      stickyCTA.classList.add('visible');
+    } else {
+      stickyCTA.classList.remove('visible');
+    }
+
+    lastScrollY = currentScrollY;
+  });
+}
+
+// Scroll Progress Indicator
+function initScrollProgress() {
+  const progressBar = document.querySelector('.scroll-progress');
+  if (!progressBar) return;
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    progressBar.style.width = progress + '%';
+  });
+}
+
+// Initialize lazy loading on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function () {
+  initLazyLoading();
+  initStickyCTA();
+  initScrollProgress();
+});
