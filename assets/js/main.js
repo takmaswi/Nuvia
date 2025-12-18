@@ -19,15 +19,20 @@ function initMobileMenu() {
   menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('active');
     navLinks.classList.toggle('active');
+    // Lock body scroll when menu is open
+    document.body.classList.toggle('nav-open');
   });
 
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       menuBtn.classList.remove('active');
       navLinks.classList.remove('active');
+      // Unlock body scroll when menu closes
+      document.body.classList.remove('nav-open');
     });
   });
 }
+
 
 function initStickyHeader() {
   const header = document.querySelector('.header');

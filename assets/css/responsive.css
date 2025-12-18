@@ -9,6 +9,47 @@
 
 /* Mobile Navigation */
 @media (max-width: 767px) {
+
+    /* CRITICAL: Prevent horizontal scroll */
+    html,
+    body {
+        overflow-x: hidden;
+        max-width: 100vw;
+        width: 100%;
+    }
+
+    /* Lock body scroll when mobile nav is open */
+    body.nav-open {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+
+
+    /* Ensure all containers respect viewport */
+    .container,
+    .container-wide,
+    main,
+    section,
+    .section {
+        max-width: 100vw;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    /* Fix property grid and other grids */
+    .property-grid,
+    .grid,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .services-grid,
+    .trust-grid,
+    .footer-grid {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
     .header {
         height: 70px;
     }
@@ -25,13 +66,17 @@
         font-size: var(--text-lg);
     }
 
+    /* Mobile Navigation Menu - Fixed overlay */
     .nav-links {
         position: fixed;
         top: 70px;
         left: 0;
         right: 0;
         bottom: 0;
+        /* CRITICAL: Solid background to prevent content bleed-through */
         background: var(--white);
+        /* Ensure no transparency */
+        opacity: 1;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -39,7 +84,10 @@
         gap: var(--space-4);
         transform: translateX(100%);
         transition: transform var(--transition-base);
-        z-index: 999;
+        /* Higher than header to ensure it's on top */
+        z-index: 1001;
+        /* Add shadow for visual separation */
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
     }
 
     .nav-links.active {
@@ -60,6 +108,9 @@
 
     .mobile-menu-btn {
         display: flex;
+        /* Ensure button is above nav */
+        z-index: 1002;
+        position: relative;
     }
 
     .mobile-menu-btn.active span:nth-child(1) {
@@ -106,6 +157,7 @@
     .container {
         padding: 0 var(--space-2);
     }
+
 
     /* Grids */
     .grid-2,
@@ -188,7 +240,78 @@
     h3 {
         font-size: 1.25rem;
     }
+
+    /* Fix images that could overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Fix carousels and swiper */
+    .swiper,
+    .project-carousel,
+    .project-carousel-section {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .swiper-slide {
+        max-width: 100%;
+    }
+
+    /* Fix filter bar on properties page */
+    .card.card-glass[style*="display: flex"] {
+        flex-direction: column;
+    }
+
+    /* Ensure flex containers don't cause overflow */
+    .flex,
+    .flex-center,
+    .flex-between {
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    /* Property cards fix */
+    .property-card {
+        max-width: 100%;
+    }
+
+    .property-card .property-image img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Accordion fix */
+    .accordion,
+    .accordion-item {
+        max-width: 100%;
+    }
+
+    /* Button width constraints */
+    .btn {
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    /* Trust items fix */
+    .trust-item {
+        max-width: 100%;
+    }
+
+    /* Section headers */
+    .section-header {
+        max-width: 100%;
+        padding: 0 var(--space-2);
+    }
+
+    /* Carousel slide content */
+    .carousel-slide-content,
+    .carousel-slide-image {
+        max-width: 100%;
+    }
 }
+
 
 /* ============================================
    TABLET (768px - 1023px)
